@@ -7,7 +7,7 @@ import (
 // URLEncodeCodec handles URL percent encoding/decoding.
 type URLEncodeCodec struct{}
 
-func (c *URLEncodeCodec) Name() string    { return "url" }
+func (c *URLEncodeCodec) Name() string      { return "url" }
 func (c *URLEncodeCodec) Aliases() []string { return []string{"urlencode", "percent"} }
 
 func (c *URLEncodeCodec) Encode(data []byte) ([]byte, error) {

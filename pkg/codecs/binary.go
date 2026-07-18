@@ -8,7 +8,7 @@ import (
 // BinaryCodec handles binary representation encoding/decoding.
 type BinaryCodec struct{}
 
-func (c *BinaryCodec) Name() string    { return "binary" }
+func (c *BinaryCodec) Name() string      { return "binary" }
 func (c *BinaryCodec) Aliases() []string { return []string{"bin"} }
 
 func (c *BinaryCodec) Encode(data []byte) ([]byte, error) {

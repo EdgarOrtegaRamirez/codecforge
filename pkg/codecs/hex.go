@@ -8,7 +8,7 @@ import (
 // HexCodec handles hexadecimal encoding/decoding.
 type HexCodec struct{}
 
-func (c *HexCodec) Name() string    { return "hex" }
+func (c *HexCodec) Name() string      { return "hex" }
 func (c *HexCodec) Aliases() []string { return []string{"hexadecimal"} }
 
 func (c *HexCodec) Encode(data []byte) ([]byte, error) {

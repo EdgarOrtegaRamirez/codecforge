@@ -9,7 +9,7 @@ import (
 // UnicodeEscapeCodec handles Unicode escape sequence encoding/decoding.
 type UnicodeEscapeCodec struct{}
 
-func (c *UnicodeEscapeCodec) Name() string    { return "unicode" }
+func (c *UnicodeEscapeCodec) Name() string      { return "unicode" }
 func (c *UnicodeEscapeCodec) Aliases() []string { return []string{"unicode-escape", "u-escape"} }
 
 func (c *UnicodeEscapeCodec) Encode(data []byte) ([]byte, error) {

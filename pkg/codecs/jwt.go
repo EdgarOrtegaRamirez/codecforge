@@ -10,7 +10,7 @@ import (
 // JWTCodec handles JWT token decoding (header and payload only, no signature verification).
 type JWTCodec struct{}
 
-func (c *JWTCodec) Name() string    { return "jwt" }
+func (c *JWTCodec) Name() string      { return "jwt" }
 func (c *JWTCodec) Aliases() []string { return []string{"json-web-token"} }
 
 func (c *JWTCodec) Encode(data []byte) ([]byte, error) {
@@ -46,8 +46,8 @@ func (c *JWTCodec) Decode(data []byte) ([]byte, error) {
 	}
 
 	result := map[string]interface{}{
-		"header":  header,
-		"payload": payload,
+		"header":    header,
+		"payload":   payload,
 		"signature": parts[2],
 	}
 

@@ -7,7 +7,7 @@ import (
 // Base64Codec handles standard Base64 encoding/decoding.
 type Base64Codec struct{}
 
-func (c *Base64Codec) Name() string    { return "base64" }
+func (c *Base64Codec) Name() string      { return "base64" }
 func (c *Base64Codec) Aliases() []string { return []string{"b64"} }
 
 func (c *Base64Codec) Encode(data []byte) ([]byte, error) {
@@ -31,7 +31,7 @@ func (c *Base64Codec) CanDecode(data []byte) bool {
 // Base64URLCodec handles URL-safe Base64 encoding/decoding.
 type Base64URLCodec struct{}
 
-func (c *Base64URLCodec) Name() string    { return "base64url" }
+func (c *Base64URLCodec) Name() string      { return "base64url" }
 func (c *Base64URLCodec) Aliases() []string { return []string{"b64url", "b64u"} }
 
 func (c *Base64URLCodec) Encode(data []byte) ([]byte, error) {
@@ -55,7 +55,7 @@ func (c *Base64URLCodec) CanDecode(data []byte) bool {
 // Base64RawCodec handles raw Base64 (no padding) encoding/decoding.
 type Base64RawCodec struct{}
 
-func (c *Base64RawCodec) Name() string    { return "base64raw" }
+func (c *Base64RawCodec) Name() string      { return "base64raw" }
 func (c *Base64RawCodec) Aliases() []string { return []string{"b64raw"} }
 
 func (c *Base64RawCodec) Encode(data []byte) ([]byte, error) {

@@ -8,7 +8,7 @@ import (
 // HTMLEntityCodec handles HTML entity encoding/decoding.
 type HTMLEntityCodec struct{}
 
-func (c *HTMLEntityCodec) Name() string    { return "html" }
+func (c *HTMLEntityCodec) Name() string      { return "html" }
 func (c *HTMLEntityCodec) Aliases() []string { return []string{"html-entity", "htmlescape"} }
 
 func (c *HTMLEntityCodec) Encode(data []byte) ([]byte, error) {
